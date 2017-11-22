@@ -1,0 +1,36 @@
+[{
+    "type": "internal",
+    "trans": "Signals",
+    "route": "public.customPosts({slug: 'signal'})",
+    "icon": "icon ion-ios-pulse"
+},{
+    "type": "folder",
+    "trans": "Brokers",
+    "icon": "icon ion-ios-pie-outline",
+    "list": [{
+        "type": "internal",
+        "trans": "AvaTrade",
+        "route": "public.customPosts.id({ id: 3626, slug: 'broker'})",
+        "icon": ""
+    }, {
+        "type": "internal",
+        "trans": "All Brokers",
+        "route": "public.customPosts({slug: 'broker'})",
+        "icon": ""
+    }]
+}, {
+    "type": "internal",
+    "trans": "Activity",
+    "route": "public.activity",
+    "icon": "icon ion-ios-people-outline"
+}, {
+    "type": "internal",
+    "trans": "Terms Glossary",
+    "route": "public.customPosts({slug: 'glossary'})",
+    "icon": "icon ion-ios-book-outline"
+}, {
+    "type": "internal",
+    "trans": "Settings",
+    "route": "public.params",
+    "icon": "icon ion-ios-gear-outline"
+}]

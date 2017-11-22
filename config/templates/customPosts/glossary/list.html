@@ -1,0 +1,8 @@
+<div list="posts" class="glossary">
+    <div class="list card card-posts repeat-animation" ng-repeat="item in customPostsListCtrl.list">
+            <div class="item item-title-wrap item-text-wrap">
+                <h2 class="item-title" ng-bind-html="::item.title.rendered | truncate: 50: '...': true"></h2>
+            </div>
+            <div class="item item-body item-text-wrap" ng-if="::item.content.rendered" ng-bind-html="::item.content.rendered"></div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+"title": "Pip Roomz Signals"
+
+"api":
+    "baseUrl": "http://beta.piproomz.com/wp-json"
+    "timeout": 10000
+    "maxAttempt": 1
+
+"broker":
+    "query":
+        "per_page": 20
+
+"signal":
+    "query":
+        "per_page": 20
+
+"glossary":
+    "query":
+        "per_page": 20
+        "order": "asc"
+        "status": "publish"
+
+"translation":
+    "displayed" : ["en", "fr"]
+    "prefered": "en"
+
+"cordova":
+    "admob":
+        "enabled":false
+        "android":
+            "bannerID": null
+            "interstitialID": null
+        "ios":
+            "bannerID": null
+            "interstitialID": null
+    "pushNotifications":
+        "enabled": false
+        "baseUrl": "http://yourDomain.com/pnfw"
+        "android":
+            "senderID": ""
+"menu":
+    "defaultState":
+        "state": "public.customPosts"
+        "params": {"slug": "signal"}

@@ -1,0 +1,29 @@
+<div list="posts" class="signals">
+	<div class="list repeat-animation" ng-repeat="item in customPostsListCtrl.list" >
+		<div class="row">
+			<div class="col-25 date-posted text-right">
+				<p ng-bind="::item.date | date:'MMM d'"></p>
+				<p ng-bind="::item.date | date:'h:mm a'"></p>
+				<p>#<span ng-bind-html="::item.id" ></span></p>
+			</div>
+			<div class="col">
+				<div class=" card card-posts {{::item.acf.action}}" ng-class="::item.acf.action=='buy' ? 'buy' : 'sell'">
+					<div class="row card-body" >
+						<div class="col text-left" >
+							<p class="item-title align-self-start strong" ng-bind-html="::item.acf.currency_pair"></p>
+
+						</div>
+						<div class="col text-right">
+							<strong><h1 class="action" ng-if="::item.acf.action" ng-bind-html="::item.acf.action"></h1></strong>
+						</div>
+					</div>
+					<div class="row signal-meta">
+						<div class="col">
+							<div><b>SL:</b> <span ng-if="::item.acf.stop_loss" ng-bind-html="::item.acf.stop_loss"></span> / <b>TP:</b> <span ng-if="::item.acf.take_profit" ng-bind-html="::item.acf.take_profit"></span> / <b>Hold:</b> <span ng-if="::item.acf.hold_length" ng-bind-html="::item.acf.hold_length"></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
